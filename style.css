@@ -1,0 +1,27 @@
+.h2 {
+		text-align: center;
+		font-size: 64px;
+		margin: 20% 35%;
+		border: 1px dashed black;
+		width: 500px;
+	}
+
+	.form {
+		padding: 5px;
+		width: 400px;
+		text-align: center;
+		position: absolute;
+		left: 37%;
+		top: 20px;
+		background: lightblue;
+	}
+	
+	.form input[type=text] {
+		text-align: center;
+		color: firebrick;
+		padding: 10px 0;
+		margin-right: 40px;
+		border-radius: 20px;
+	}
+
+
