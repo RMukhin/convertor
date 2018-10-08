@@ -1,9 +1,9 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 <?php 
 	if (isset($_POST['sub'])) {
-		$num = (int) ($_POST['num']);	
+		$num = (int) abs(strip_tags(($_POST['num'])));	
 
-		$h2 = ' class="h2"';
+		$window = ' class="window"';
 
 		function convertor($seconds)	{
 
@@ -26,15 +26,16 @@
 				return "H $h : M $min : S $sec";
 		
 		}
+
 } else {
 	$h = 0;
 	$min = 0;
 	$sec = 0;
 }
-		echo "<h2$h2>" .convertor($num) . '</h2>';
+		echo "<h2$window>" .convertor($num) . '</h2>';
 ?>
 
 <form action="index.php" method="post" class="form">
-		<input placeholder="input number" type="text" name="num" id="put">
+		<input placeholder="input number" type="text" name="num" id="put" maxlength="6">
 		<input type="submit" name="sub">
 </form>
