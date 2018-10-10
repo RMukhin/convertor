@@ -6,7 +6,7 @@
 .window {
 		text-align: center;
 		font-size: 64px;
-		margin: 20% auto;
+		margin: 100px auto;
 		border: 1px dashed black;
 		width: 600px;
 	}
@@ -16,6 +16,7 @@
 		width: 400px;
 		text-align: center;
 		position: relative;
+    top: 30%;
 		margin: 0 auto;
 		background: firebrick;
 		border-radius: 25px;

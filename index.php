@@ -5,9 +5,12 @@
 
 		$window = ' class="window"';
 
-				
-		function conva($seconds)	{
-			$sec = 0;
+
+        /**
+         * @param $seconds
+         * @return string
+         */
+        function conva($seconds)	{
 			define('SEC_IN_HOUR', 3600);
 			define('SEC_IN_MIN', 60);
 
